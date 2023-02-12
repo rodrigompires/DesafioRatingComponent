@@ -1,0 +1,54 @@
+.card {
+
+    &__star-2,
+    &__star-3,
+    &__star-4,
+    &__star-5 {
+        opacity: 0;
+        transition: all .5s linear;
+    }
+
+    .card__img-star2 {
+        filter: hue-rotate(100deg);
+
+    }
+
+    .card__img-star3 {
+        filter: hue-rotate(180deg);
+    }
+
+    .card__img-star4 {
+        filter: hue-rotate(260deg);
+    }
+
+    .card__img-star5 {
+        filter: hue-rotate(320deg);
+    }
+
+    .card__star-2.show,
+    .card__star-3.show,
+    .card__star-4.show,
+    .card__star-5.show {
+        transition: all .5s linear;
+        opacity: 1;
+    }
+}
+
+// Animação card
+.face.rotate,
+.card.rotate {
+    transform: rotateY(180deg);
+    z-index: 0;
+}
+
+.face.rotate,
+.background.rotate {
+    transform: rotateY(0deg);
+    z-index: 1;
+}
+
+.card, .background {
+    position: absolute;
+    transition: 700ms;
+}
+

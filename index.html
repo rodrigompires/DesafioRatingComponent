@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+  <main class="container">
+    <div class="face">
+      <div class="card">
+        <div class="card__boxstar">
+          <div class="card__star card__star-1">
+            <img src="./assets/images/icon-star.svg" alt="Image star" class="card__img star1">
+          </div>
+          <div class="card__star card__star-2" id="star-2">
+            <img src="./assets/images/icon-star.svg" alt="Image star" class="card__img card__img-star2">
+          </div>
+          <div class="card__star card__star-3">
+            <img src="./assets/images/icon-star.svg" alt="Image star" class="card__img card__img-star3">
+          </div>
+          <div class="card__star card__star-4">
+            <img src="./assets/images/icon-star.svg" alt="Image star" class="card__img card__img-star4">
+          </div>
+          <div class="card__star card__star-5">
+            <img src="./assets/images/icon-star.svg" alt="Image star" class="card__img card__img-star5">
+          </div>
+        </div>
+        <div class="card__title">
+          <h1>How did we do?</h1>
+        </div>
+        <div class="card__text">
+          <span class="card__informe">Please let us know how we did with your support request. All feedback is
+            appreciated
+            to help us improve our offering!</span>
+        </div>
+        <div class="card__buttons">
+          <span class="card__rating" id="rating-1">1</span>
+          <span class="card__rating" id="rating-2">2</span>
+          <span class="card__rating" id="rating-3">3</span>
+          <span class="card__rating" id="rating-4">4</span>
+          <span class="card__rating" id="rating-5">5</span>
+        </div>
+        <div class="card__btn">
+          <input type="button" value="Submit" disabled>
+        </div>
+      </div>
+
+
+      <!-- Rating state end -->
+
+      <div class="background">
+        <div class="background__boximg">
+          <img src="./assets/images/illustration-thank-you.svg" alt="Ilustração máquina" class="background__img">
+        </div>
+        <p class="background__hide">Click here to reload the page</p>
+        <div class="background__rating">
+          <span class="background__text"></span>
+        </div>
+        <div class="background__acknowledgment">
+          <h1>Thank you!</h1>
+        </div>
+        <div class="background__texttks">
+          <span class="background__informe">We appreciate you taking the time to give a rating. If you ever need more
+            support,
+            don’t hesitate to get in touch!</span>
+        </div>
+      </div>
+  </main>
+    </div>
+  <footer class="footer__box">
+    <img src="./assets/images/image-1.svg" alt="my avatar" class="footer__avatar">
+    <div class="author">
+      <span class="author__text">Creation of</span>
+      <a href="https://github.com/rodrigompires?tab=repositories" class="btn-flip" data-back="Developer"
+        data-front="Rodrigo Pires" target="_blank"></a>
+    </div>
+  </footer>
+  <script src="./dist/script.js"></script>
+</body>
+</html>

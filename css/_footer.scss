@@ -1,0 +1,82 @@
+.footer__box {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.footer__avatar {
+    width: 2.5rem;
+    margin-left: 1rem;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+
+    &__text {
+        color: $green;
+        font-size: .84rem;
+    }
+
+}
+
+.btn-flip {
+    opacity: 1;
+	outline: 0;
+	color: $green;
+	line-height: 25px;
+	position: relative;
+	text-align: center;
+	letter-spacing: 1px;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+    font-weight: 800;
+
+    &:hover{
+		
+		&:after{
+			opacity: 1;
+			transform: translateY(0) rotateX(0);
+		}
+		
+		&:before{
+			opacity: 0;
+			transform: translateY(50%) rotateX(90deg);
+		}
+	}
+	
+	&:after{
+		top: 0;
+		left: 0;
+		opacity: 0;
+		width: 100%;
+		color: $color-button;
+		display: block;
+		transition: 0.5s;
+		position: absolute;
+		background: $background-button;
+		content: attr(data-back);
+		transform: translateY(-50%) rotateX(90deg);
+        font-size: .6rem;
+	}
+	
+	&:before{
+		top: 0;
+		left: 0;
+		opacity: 1;
+		color: $very-dark-blue;
+		display: block;
+		padding: 0 0;
+		line-height: 25px;
+		transition: 0.5s;
+		position: relative;
+		background: $text-button;
+		content: attr(data-front);
+		transform: translateY(0) rotateX(0);
+        font-size: .6rem;
+	}
+}
